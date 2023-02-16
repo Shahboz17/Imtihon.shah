@@ -1,0 +1,131 @@
+.footer{
+
+    .footer-baner{
+        background: url(../image/footer/Mask.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 102px 0;
+
+        @include for-media768() {
+            padding: 62px 0;
+        }
+        
+        .footer-baner-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include for-media768() {
+                flex-direction: column;
+                row-gap: 40px;
+            }
+
+            .footer-baner-text{
+                h2{
+                    font-family: 'Space Mono';
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 48px;
+                    letter-spacing: -2.14286px;
+                    color: #FFFFFF;
+                    max-width: 415px;
+
+                    @include for-media768() {
+                        text-align: center;
+                    }
+                    @include for-media576() {
+                        max-width: 311px;
+                        font-size: 32px;
+                        line-height: 32px;
+
+                    }
+                }
+            }    
+            
+            .footer-baner-img{
+                display: flex;
+                column-gap: 18px;
+    
+                img{
+                    max-width: 159px;
+                    max-height: 56px;
+                }
+            }
+        }
+    }
+
+
+    .footer-nav{
+        padding: 35px 0 32px 0;
+        background: #333A44;
+        
+        @include for-media650() {
+            padding: 64px 0 88px 0;
+        }           
+
+        .footer-menu{
+            display: flex;
+            align-items: center;
+            padding: 22px 0 21px 0;
+
+            @include for-media650() {
+                flex-direction: column;
+                row-gap: 41px;
+            }           
+
+            &-image{
+                max-width: 107px;
+                margin-right: 58px;
+        
+                @include for-media650() {
+                    margin-right: 0;
+                }           
+                
+            }
+        
+            &-bar{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                
+                @include for-media650() {
+                    flex-direction: column;
+                    row-gap: 85px;
+                }           
+            }
+        
+            &-ul{
+                display: flex;
+                list-style: none;
+                column-gap: 32px;
+                text-align: center;
+
+                @include for-media576() {
+                    flex-direction: column;
+                    row-gap: 16px;
+                }
+            }
+        
+            &-link{
+                text-decoration: none;
+                font-family: 'Space Mono';
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 25px;
+                color: #939CAA;
+    
+            }
+
+            .icons{
+                display: flex;
+                column-gap: 24px;
+
+                img{
+                    max-width: 24px;
+                }
+            }
+        }
+    }
+}

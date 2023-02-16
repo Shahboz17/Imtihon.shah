@@ -1,0 +1,108 @@
+.serves{
+    padding: 160px 0 147px 0;
+
+    &-content{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 30px;
+
+        @include for-media768() {
+            grid-template-columns: auto;
+            row-gap: 40px;
+        }
+        @include for-media768() {
+            row-gap: 48px;
+        }
+
+        &-card{
+            position: relative;
+            @include for-media768() {
+                display: flex;
+                column-gap: 79px;
+                padding: 0 50px;
+            }
+            @include for-media576() {
+                flex-direction: column;
+                text-align: center;
+                padding: 0 32px;
+            }
+
+            .card-img{
+                position: relative;
+                width: 96px;
+                height: 96px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: #FCB72B;
+
+                @include for-media768() {
+                    min-height: 96px;
+                    min-width: 96px;
+                }
+                @include for-media576() {
+                    height: 56px;
+                    width: 56px;
+                    margin: 0 auto;
+                }
+
+                .before{
+                    position: absolute;
+                    right: 0;
+                    top: 33px;
+                    min-width: 500px;
+                    height: 1px;
+                    border: 14px solid #E5ECF4;
+                    z-index: -1;
+                    @include for-media768() {
+                        right: -204px;
+                        top: -180px;
+                        transform: rotate(90deg);
+                    }
+                    @include for-media576() {
+                        display: none;
+                    }
+                }
+
+                img{
+                    max-width: 40px;
+
+                    @include for-media576() {
+                        
+                    }
+                }
+            }
+
+            .card-text{
+
+                &-h3{
+                    font-family: 'Space Mono';
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: -1.07143px;
+                    color: #495567;
+                    margin: 40px 0 27px 0;
+
+                    @include for-media768() {
+                        margin: 0 0 27px 0;
+                    }
+                    @include for-media576() {
+                        margin: 24px 0;
+                        font-size: 20px;
+                        line-height: 28px
+                    }
+                }
+
+                &-p{
+                    font-family: 'Lexend Deca';
+                    font-weight: 400;
+                    font-size:  15px;
+                    line-height: 25px;
+                    color: #939CAA;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.faqs{
+    padding-bottom: 160px;
+    @include for-media768() {
+        padding-bottom: 120px;
+    }
+
+    .headeng{
+        h2{
+            font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: -2.14286px;
+            color: #495567;
+            margin-bottom: 64px;
+            @include for-media576() {
+                font-size: 32px;
+                line-height: 32px;
+                margin-bottom: 48px;
+            }
+        }
+    }
+
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        @include for-media1090() {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 32px;
+        }
+
+        &-headeng{
+            font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -1.78571px;
+            color: #495567;
+            @include for-media576() {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+
+        &-accordion{
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            
+            .accordion-box{
+                width: 730px;
+                background: #F2F5F9;
+                padding: 32px 40px;
+                cursor: pointer;
+
+                @include for-media1090() {
+                    max-width: 689px;
+                }
+                @include for-media768() {
+                    max-width: 500px;
+                }
+                @include for-media576() {
+                    max-width: 311px;
+                }    
+                @include for-media576() {
+                    padding: 32px 28px 32px 32px;
+                }
+
+                .accordion-headeng{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    column-gap: 16px;
+
+                    h3{
+                        font-family: 'Space Mono';
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: -1.07143px;
+                        color: #495567;
+                        @include for-media576() {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    }
+
+                    .icon{
+                        max-width: 16px;
+                        transition: .2s ease;
+                    }
+                    .accordion-btn-active{
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .text{
+                    // display: none;
+                    height: 0;
+                    opacity: 0;
+                    font-family: 'Lexend Deca';
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #495567;
+                    transition: .5s ease;
+                }
+                .accordion-text-active{
+                    height: auto;
+                    opacity: 1;
+                    margin-top: 24px;
+                    // display: block;
+                }
+            }
+        }
+    }
+
+    &-bottom{
+        margin-top: 64px;
+    }
+}

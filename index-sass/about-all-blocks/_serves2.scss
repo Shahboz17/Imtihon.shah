@@ -1,0 +1,109 @@
+.serves2{
+    padding: 0 0 120px 0;
+    @include for-media576(){
+        padding-bottom: 145px;   
+    }
+    
+    .headeng{
+        text-align: center;
+        margin-bottom: 103px;
+        @include for-media576() {
+            margin-bottom: 64px;
+        }
+
+        h2{
+            font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: #495567;
+
+            @include for-media576() {
+                font-size: 32px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    &-content2{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 30px;
+
+        @include for-media768() {
+            grid-template-columns: auto;
+            row-gap: 55px;
+        }
+
+        &-card2{
+
+            .card2-img2{
+                position: relative;
+                max-width: 240px;
+                max-height: 240px;
+                border-radius: 50%;margin: 0 auto;
+
+                img{
+                    max-width: 240px;
+                    border-radius: 50%;
+
+                    @include for-media576() {
+                        
+                    }
+                }
+
+                &-number{
+                    position: absolute;
+                    bottom: -23%;
+                    left: 30%;
+                    font-family: 'Space Mono';
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: -1.07143px;
+                    color: #495567;
+                    padding: 34px;
+                    border-radius: 50%;
+                    background: #FCB72B;
+                }
+            }
+
+            .card2-text2{
+                text-align: center;
+
+                &-h3{
+                    font-family: 'Space Mono';
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: -1.07143px;
+                    color: #495567;
+                    margin: 87px 0 27px 0;
+
+                    @include for-media576() {
+                        margin: 64px 0 27px 0;
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+                }
+
+                &-p{
+                    font-family: 'Lexend Deca';
+                    font-weight: 400;
+                    font-size:  15px;
+                    line-height: 25px;
+                    color: #939CAA;
+                    max-width: 350px;
+                    margin: 0 auto;
+                    @include for-media768() {
+                        max-width: 457px;
+                    }
+                    @include for-media768() {
+                        max-width: 311px;
+                    }
+                }
+            }
+        }
+    }
+}

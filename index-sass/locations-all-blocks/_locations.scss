@@ -1,0 +1,69 @@
+.locations{
+    padding: 120px 0;
+
+    &-content{
+
+
+    }
+
+    &-baner{
+        width: 100%;
+        height: 543px;
+        border: 2px solid red;
+
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        margin-top: 120px;
+        @include for-media992() {
+            flex-direction: column;
+            text-align: center;
+        }
+        @include for-media768() {
+            margin-top: 64px;
+            row-gap: 32px;
+        }
+
+        h2{
+            max-width: 351px;
+            font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: #495567;
+            @include for-media576() {
+                font-size: 32px;
+                line-height: 32px;
+            }
+            
+        }
+        p{
+            max-width: 445px;
+            font-family: 'Lexend Deca';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+            margin-left: 30px;
+            margin-right: 105px;
+            @include for-media992() {
+                margin: 0;
+                max-width: 600px;
+            }
+            @include for-media992() {
+                margin: 0;
+                max-width: 570px;
+            }
+        }
+    }
+}

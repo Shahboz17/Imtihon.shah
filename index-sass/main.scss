@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@400;700&display=swap');
+@import './mixins';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1166px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.btn {
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    background: #FCB72B;
+    border: none;
+    cursor: pointer;
+}
+
+@import './all-blocks/all-blocks';
+@import './about-all-blocks/about-all-blocks';
+@import './careers-all-blocks/careers-all-blocks';
+@import './locations-all-blocks/locations-all-blocks';
